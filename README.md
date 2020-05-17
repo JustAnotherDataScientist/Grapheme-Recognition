@@ -3,6 +3,20 @@ Code for finetuning ResNet34 on pytorch for BengaliAI-cv19 competition : https:/
 
 Will give you top 10% results on test dataset.
 
+## Setup
+Must have GPU for training and inference. Code can be adaptable, but GPU is highly advised for training ResNet34.
+Install requirements.txt :
+```
+pip install -r requirements.txt
+```
+
+In your bash : 
+```
+sh run.sh
+```
+
+Will run 5-folds trainings to create 5 models. Just add an average-pooling for inference.
+
 ## Requirements 
 * albumentations==0.4.5
 * attrs==19.3.0
